@@ -1,6 +1,8 @@
 duration: 6h
 test: |
+  mkdir /tmp/dist-git
   ./subject-from-repos.py -artifacts /var/share/test-artifacts -plan plan.xml >subject.xml
+  chown -R mbici:mbici /tmp/dist-git
   export PLAN=$(cat plan.xml | gzip | base64 -w0)
   export PLATFORM=$(cat platform.xml | gzip | base64 -w0)
   export SUBJECT=$(cat subject.xml | gzip | base64 -w0)
