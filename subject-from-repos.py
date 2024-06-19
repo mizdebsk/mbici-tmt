@@ -30,8 +30,8 @@ def name_from_nvra(str):
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-plan", required=True, help="Path to Build Plan")
-parser.add_argument("-hub", default="https://kojihub.stream.rdu2.redhat.com/kojihub", help="Koji hub API URL")
-parser.add_argument("-lookaside", default="https://sources.stream.centos.org/sources/rpms", help="Lookaside cache base URL")
+parser.add_argument("-hub", default="https://koji.fedoraproject.org/kojihub", help="Koji hub API URL")
+parser.add_argument("-lookaside", default="https://src.fedoraproject.org/lookaside/pkgs/rpms", help="Lookaside cache base URL")
 parser.add_argument("-artifacts", default="/tmp/test-artifacts", help="Directory with test artifacts")
 args = parser.parse_args()
 
