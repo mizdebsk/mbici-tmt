@@ -4,6 +4,4 @@ description: |
   bootstrap Apache Maven packages is preserved.  Bootstrapping Maven
   packages means building them in a reproducible, well-defined order.
 contact: Mikolaj Izdebski <mizdebsk@redhat.com>
-framework: shell
-test: ./runtest.sh
 tier: 1
