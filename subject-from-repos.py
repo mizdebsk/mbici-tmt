@@ -9,7 +9,7 @@ import os.path
 from subprocess import Popen, PIPE
 
 def get_srpms_from_repos():
-    p = Popen(["dnf", "-q", "repoquery", "-a", "--qf", "%{SOURCERPM}"], stdin=PIPE, stdout=PIPE, stderr=PIPE)
+    p = Popen(["dnf", "-q", "repoquery", "--qf", "%{SOURCERPM}\\n"], stdin=PIPE, stdout=PIPE, stderr=PIPE)
     output, err = p.communicate(b"")
     if p.returncode != 0:
         raise Exception(f'dnf repoquery failed with exit code {p.returncode}; stderr: {err}')
