@@ -5,7 +5,7 @@ provision:
 prepare:
   - how: install
     package:
-      - java-17-openjdk-devel
+      - java-21-openjdk-devel
       - git-core
       - curl
       - dnf
