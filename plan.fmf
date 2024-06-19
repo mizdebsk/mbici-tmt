@@ -15,7 +15,6 @@ prepare:
       - createrepo_c
   - how: shell
     script: |
-      ./subject-from-repos.py -artifacts ${TEST_ARTIFACTS} -plan plan.xml >subject.xml
       git clone https://github.com/mizdebsk/mbici-workflow.git
       cd ./mbici-workflow
       ./build.sh
