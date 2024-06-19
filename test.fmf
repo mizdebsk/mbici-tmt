@@ -1,5 +1,8 @@
 duration: 6h
 test: |
+  export PLAN=$(cat plan.xml | base64 -w0)
+  export PLATFORM=$(cat platform.xml | base64 -w0)
+  export SUBJECT=$(cat subject.xml | base64 -w0)
   chmod a+rwx ${TMT_TEST_DATA}
-  su - -w TMT_TEST_DATA mbici -c mbici-run
+  su - -w TMT_TEST_DATA,PLAN,PLATFORM,SUBJECT mbici -c mbici-run
 result: custom
