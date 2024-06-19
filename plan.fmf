@@ -1,0 +1,25 @@
+discover:
+  how: fmf
+provision:
+  how: virtual
+prepare:
+  - how: install
+    package:
+      - java-17-openjdk-devel
+      - git-core
+      - curl
+      - dnf
+      - fakeroot
+      - mock
+      - nosync
+      - createrepo_c
+  - how: shell
+    script: |
+      git clone https://github.com/mizdebsk/mbici-workflow.git
+      cd ./mbici-workflow
+      ./build.sh
+      cp -a target/mbici-wf /usr/local/bin/
+      cp -a run.sh /usr/local/bin/mbici-run
+      useradd -u 18611 -G mock mbici
+execute:
+  how: tmt
