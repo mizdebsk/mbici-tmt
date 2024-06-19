@@ -13,4 +13,5 @@
   <package>mvn(org.eclipse.sisu:org.eclipse.sisu.inject)</package>
   <package>mvn(org.eclipse.sisu:sisu-maven-plugin)</package>
   <package>mvn(org.codehaus.plexus:plexus-utils)</package>
+  <package>mvn(org.junit.jupiter:junit-jupiter)</package>
 </platform>
