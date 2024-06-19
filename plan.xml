@@ -1,0 +1,10 @@
+<plan>
+  <phase>
+    <name>p1</name>
+    <component>plexus-cipher</component>
+  </phase>
+  <phase>
+    <name>p2</name>
+    <component>plexus-sec-dispatcher</component>
+  </phase>
+</plan>
