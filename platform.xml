@@ -5,13 +5,26 @@
   </repo>
   <package>rpm-build</package>
   <package>glibc-minimal-langpack</package>
-  <package>maven-local</package>
-  <package>mvn(javax.inject:javax.inject)</package>
-  <package>mvn(junit:junit)</package>
-  <package>mvn(org.codehaus.plexus:plexus:pom:)</package>
-  <package>mvn(org.codehaus.modello:modello-maven-plugin)</package>
-  <package>mvn(org.eclipse.sisu:org.eclipse.sisu.inject)</package>
-  <package>mvn(org.eclipse.sisu:sisu-maven-plugin)</package>
-  <package>mvn(org.codehaus.plexus:plexus-utils)</package>
-  <package>mvn(org.junit.jupiter:junit-jupiter)</package>
+  <package>byaccj</package>
+  <package>which</package>
+  <package>gcc</package>
+  <package>gcc-c++</package>
+  <package>make</package>
+  <package>java-21-openjdk-devel</package>
+  <package>bash</package>
+  <package>coreutils</package>
+  <package>findutils</package>
+  <package>python3-devel</package>
+  <package>python3-lxml</package>
+  <package>python3-pytest</package>
+  <package>python3-setuptools</package>
+  <package>procps-ng</package>
+  <package>publicsuffix-list</package>
+  <package>asciidoc</package>
+  <package>xmlto</package>
+  <package>lua</package>
+  <package>lujavrite</package>
+  <package>rpm-devel</package>
+  <package>rpm-local-generator-support</package>
+  <package>jurand</package>
 </platform>
