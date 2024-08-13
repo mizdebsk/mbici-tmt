@@ -19,8 +19,8 @@ mbici-wf generate \
 	 --subject subject.xml \
 	 --workflow workflow.xml
 
-mbici-wf run \
-	 --batch \
+mbici-wf execute \
+	 --batch-mode \
 	 --max-checkout-tasks 10 \
 	 --max-srpm-tasks 1 \
 	 --max-rpm-tasks 1 \
