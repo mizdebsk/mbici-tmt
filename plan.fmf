@@ -5,7 +5,6 @@ provision:
 prepare:
   - how: install
     package:
-      - java-21-openjdk-devel
       - git-core
       - curl
       - dnf
@@ -15,11 +14,9 @@ prepare:
       - createrepo_c
   - how: shell
     script: |
-      git clone https://github.com/mizdebsk/mbici-workflow.git
-      cd ./mbici-workflow
-      ./build.sh
-      cp -a target/mbici-wf /usr/local/bin/
-      cp -a run.sh /usr/local/bin/mbici-run
+      dnf -y copr enable mizdebsk/mbici
+      dnf -y install mbici-workflow
+      cp -a mbici-run.sh /usr/local/bin/mbici-run
       useradd -u 18611 -G mock mbici
 execute:
   how: tmt
