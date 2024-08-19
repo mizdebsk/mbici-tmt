@@ -3,15 +3,6 @@ discover:
 provision:
   how: virtual
 prepare:
-  - how: install
-    package:
-      - git-core
-      - curl
-      - dnf
-      - fakeroot
-      - mock
-      - nosync
-      - createrepo_c
   - how: shell
     script: |
       dnf -y copr enable mizdebsk/mbici
