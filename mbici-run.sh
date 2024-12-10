@@ -13,27 +13,27 @@ echo
 
 set -x
 
-mbici-wf generate \
-	 --plan plan.xml \
-	 --platform platform.xml \
-	 --subject subject.xml \
-	 --workflow workflow.xml
+mbi generate \
+    --plan plan.xml \
+    --platform platform.xml \
+    --subject subject.xml \
+    --workflow workflow.xml
 
-mbici-wf execute \
-	 --batch-mode \
-	 --max-checkout-tasks 10 \
-	 --max-srpm-tasks 1 \
-	 --max-rpm-tasks 1 \
-	 --workflow workflow.xml \
-	 --result-dir result \
-	 --cache-dir cache \
-	 --work-dir work
+mbi execute \
+    --batch-mode \
+    --max-checkout-tasks 10 \
+    --max-srpm-tasks 1 \
+    --max-rpm-tasks 1 \
+    --workflow workflow.xml \
+    --result-dir result \
+    --cache-dir cache \
+    --work-dir work
 
-mbici-wf report \
-	 --tmt \
-	 --plan plan.xml \
-	 --platform platform.xml \
-	 --subject subject.xml \
-	 --workflow workflow.xml \
-	 --result-dir result \
-	 --report-dir "${TMT_TEST_DATA}"
+mbi report \
+    --tmt \
+    --plan plan.xml \
+    --platform platform.xml \
+    --subject subject.xml \
+    --workflow workflow.xml \
+    --result-dir result \
+    --report-dir "${TMT_TEST_DATA}"

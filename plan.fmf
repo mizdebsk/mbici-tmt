@@ -5,8 +5,8 @@ provision:
 prepare:
   - how: shell
     script: |
-      dnf -y copr enable mizdebsk/mbici
-      dnf -y install mbici-workflow
+      dnf -y copr enable mizdebsk/mbi
+      dnf -y install mbi
       cp -a mbici-run.sh /usr/local/bin/mbici-run
       useradd -u 18611 -G mock mbici
 execute:
